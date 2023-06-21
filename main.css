@@ -1,0 +1,314 @@
+/* 
+  ==================================================
+  Main CSS Styling, 
+  Author: Usama Farooq
+  ==================================================
+*/
+
+
+
+
+
+/* 
+  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+  Website Theme Start
+  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+*/
+
+/* ===== Website Font Family ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+
+:root {
+/* ===== Base Colors ===== */
+--base-color1: #F9FAFB;
+--base-color2: #F3F4F6;
+--base-color3: #F3F4F6;
+--base-color4: #D2D5DA;
+--base-color5: #9CA3AF;
+--base-color6: #6D7280;
+--base-color7: #4B5563;
+--base-color8: #374151;
+--base-color9: #1F2937;
+--base-color10: #111827;
+/* ===== Main Colors ===== */
+--body-color:#ffffff;
+--primary-color: #ffbd07;
+--secondary-color: #ff2002;
+--text-color-1: #374151;
+--text-color-2: #F3F4F6;
+--heading-color-1: #1F2937;
+--heading-color-2: #F3F4F6;
+--layout-color-1: #D2D5DA;
+--layout-color-2: #4B5563;
+--border-color-1: #D2D5DA;
+--border-color-2: #4B5563;
+/* ===== Text Sizes ===== */
+--text-size-xlg: 1.8rem;
+--text-size-lg: 1.5rem;
+--text-size-md: 1rem;
+--text-size-sm: 0.9rem;
+}
+
+/* 
+  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+  Light Theme
+  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+*/
+.light-theme{
+/* ===== Base Colors ===== */
+--base-color1: #F9FAFB;
+--base-color2: #F3F4F6;
+--base-color3: #F3F4F6;
+--base-color4: #D2D5DA;
+--base-color5: #9CA3AF;
+--base-color6: #6D7280;
+--base-color7: #4B5563;
+--base-color8: #374151;
+--base-color9: #1F2937;
+--base-color10: #111827;
+/* ===== Main Colors ===== */
+--body-color:#ffffff;
+--primary-color: #ffbd07;
+--secondary-color: #ff2002;
+--text-color-1: #374151;
+--text-color-2: #F3F4F6;
+--heading-color-1: #1F2937;
+--heading-color-2: #F3F4F6;
+--layout-color-1: #D2D5DA;
+--layout-color-2: #4B5563;
+--border-color-1: #D2D5DA;
+--border-color-2: #4B5563;
+/* ===== Text Sizes ===== */
+--text-size-xlg: 1.8rem;
+--text-size-lg: 1.5rem;
+--text-size-md: 1rem;
+--text-size-sm: 0.9rem;
+}
+
+/* 
+  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+  Dark Theme
+  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+*/
+.dark-theme{
+/* ===== Base Colors ===== */
+--base-color1: #111827;
+--base-color2: #1F2937;
+--base-color3: #374151;
+--base-color4: #4B5563;
+--base-color5: #6D7280;
+--base-color6: #9CA3AF;
+--base-color7: #D2D5DA;
+--base-color8: #F3F4F6;
+--base-color9: #F3F4F6;
+--base-color10: #F9FAFB;
+/* ===== Main Colors ===== */
+--body-color:#111827;
+--primary-color: #ffbd07;
+--secondary-color: #ff2002;
+--text-color-1: #F3F4F6;
+--text-color-2: #374151;
+--heading-color-1: #F3F4F6;
+--heading-color-2: #1F2937;
+--layout-color-1: #4B5563;
+--layout-color-2: #D2D5DA;
+--border-color-1: #4B5563;
+--border-color-2: #D2D5DA;
+/* ===== Text Sizes ===== */
+--text-size-xlg: 1.8rem;
+--text-size-lg: 1.5rem;
+--text-size-md: 1rem;
+--text-size-sm: 0.9rem;
+}
+
+/* 
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Website Theme End
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+*/
+
+
+
+
+
+/* 
+  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+  Universal Styling Start
+  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+*/
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin and Padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove default margin and Padding */
+h1, h2, h3, h4, h5, h6,
+p,
+a,
+ul, ol,
+li,
+blockquote,
+pre {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set body height 100% */
+html,
+body {
+  height: 100%;
+}
+
+/* Set core body defaults */
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 
+  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+  Universal Styling End
+  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+*/
+
+
+
+
+
+
+
+
+
+
+/* 
+  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+  Main Styling Start
+  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+*/
+
+
+
+
+
+/* 
+  >>>>>>>>>>>>>>>>>>>>
+  Header Start
+  >>>>>>>>>>>>>>>>>>>>
+*/
+
+/* ===== Responsive Media Queries ===== */
+@media only screen and (max-width: 1200px) {}
+
+@media only screen and (max-width: 992px) {}
+
+@media only screen and (max-width: 768px) {}
+
+@media only screen and (max-width: 576px) {}
+/* ===== Responsive Media Queries End ===== */
+/* 
+ <<<<<<<<<<<<<<<<<<<<
+  Header End
+  <<<<<<<<<<<<<<<<<<<<
+*/
+
+
+
+
+
+/* 
+  >>>>>>>>>>>>>>>>>>>>
+  Section Start
+  >>>>>>>>>>>>>>>>>>>>
+*/
+
+/* ========== Responsive Media Queries ========== */
+@media only screen and (max-width: 1200px) {}
+
+@media only screen and (max-width: 992px) {}
+
+@media only screen and (max-width: 768px) {}
+
+@media only screen and (max-width: 576px) {}
+/* ========== Responsive Media Queries End ========== */
+/* 
+ <<<<<<<<<<<<<<<<<<<<
+  Section End
+  <<<<<<<<<<<<<<<<<<<<
+*/
+
+
+
+
+
+/* 
+  >>>>>>>>>>>>>>>>>>>>
+  Footer Start
+  >>>>>>>>>>>>>>>>>>>>
+*/
+
+/* ========== Responsive Media Queries ========== */
+@media only screen and (max-width: 1200px) {}
+
+@media only screen and (max-width: 992px) {}
+
+@media only screen and (max-width: 768px) {}
+
+@media only screen and (max-width: 576px) {}
+/* ========== Responsive Media Queries End ========== */
+/* 
+ <<<<<<<<<<<<<<<<<<<<
+  Footer End
+  <<<<<<<<<<<<<<<<<<<<
+*/
+
+
+
+
+
+/* 
+  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+  Main Styling End
+  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+*/
